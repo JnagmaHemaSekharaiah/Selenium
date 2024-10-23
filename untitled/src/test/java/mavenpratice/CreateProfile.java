@@ -13,7 +13,7 @@ public class CreateProfile
     public void hello()
     {
 
-        WebDriverManager.chromedriver().setup();
+        WebDriverManager.chromedriver().setup()
         WebDriver driver = new ChromeDriver();
         driver.get("https://www.google.co.in/");
     }
