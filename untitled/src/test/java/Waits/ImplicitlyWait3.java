@@ -44,7 +44,12 @@ public class ImplicitlyWait3
         }
         );
 
-        wait.until(driver1 -> driver1.findElement(By.id("dynamicElement")));
+     WebElement ele =   wait.until(driver1 ->
+                {
+                    return driver1.findElement(By.id("dynamicElement"));
+                }
+
+                );
 
 
 

@@ -29,8 +29,9 @@ public class ImplicitlyWait2
         setUp();
 
         WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
-        wait.pollingEvery(Duration.ofSeconds(4));
         wait.ignoring(NoSuchElementException.class);
+        wait.pollingEvery(Duration.ofSeconds(4));
+
 
         driver.findElement(By.xpath("//button[@id='btn1']")).click();
 

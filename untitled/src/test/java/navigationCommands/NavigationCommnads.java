@@ -14,6 +14,14 @@ public class NavigationCommnads
         WebDriverManager.chromedriver().setup();
         WebDriver driver = new ChromeDriver();
         driver.get("https://www.google.co.in/");
+
+
+        driver.get("");
+        driver.navigate().to(driver.getCurrentUrl());
+        driver.navigate().back();
+        driver.navigate().forward();
+        driver.navigate().refresh();
+
         driver.close();
 
     }
